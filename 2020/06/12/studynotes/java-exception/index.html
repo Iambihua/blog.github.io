@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021 - Hexo</title>
+  <title>Java异常 - Hexo</title>
+  
+    <meta name="keywords" content="Java异常,Java日志">
   
 
+  
+    <meta name="description" content="Java进阶学习之异常">
   
 
   <!-- feed -->
@@ -355,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="half" class='cover-wrapper post dock' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -431,79 +433,504 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
-      
+    
+    
+      <h1 class="title">
+        Java异常
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/06/15/studynotes/semver2.0.0/">
-        语义化版本2.0.0介绍
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="语义化版本2-0-0介绍"><a href="#语义化版本2-0-0介绍" class="headerlink" title="语义化版本2.0.0介绍"></a>语义化版本2.0.0介绍</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>语义化版本是为了解决软件开发过程中依赖关系混乱或者依赖锁死的情况。</p>
-<p>它的标准格式如下：</p>
-<blockquote>
-<p><strong>x.y.z</strong></p>
-</blockquote>
-<p>其中x表示主版本号，y表示次版本号，z表示修订号。</p>
-<p>对这几种版本号的解释如下：</p>
-<p>X 主版本号，表示做了<strong>不向下兼容的修改</strong>时递增。</p>
-<p>Y 次版本号，表示做了<strong>向下兼容的新增及修改</strong>时递增。</p>
-<p>Z 修订号，表示做了<strong>向下兼容的问题修复</strong>时递增。</p>
-    
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/">Java</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-06-15</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 12, 2020</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/">扩展阅读</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="Java异常" data-path="/2020/06/12/studynotes/java-exception/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <blockquote>
+<p>本文是Java异常篇，学习于<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1252599548343744">廖雪峰的Java教程</a></p>
+</blockquote>
+<h2 id="Java异常"><a href="#Java异常" class="headerlink" title="Java异常"></a>Java异常</h2><h3 id="1-异常类型"><a href="#1-异常类型" class="headerlink" title="1.异常类型"></a>1.异常类型</h3><ul>
+<li><p>异常体系的根为<code>Throwable</code>，它继承自<code>Object</code>。</p>
+</li>
+<li><p><code>Throwable</code>有两个体系<code>Error</code>和<code>Exception</code>。</p>
+</li>
+<li><p><code>Error</code>类</p>
+<ul>
+<li><code>OutOfMemoryError</code></li>
+<li><code>NoClassDefFounderError</code></li>
+<li><code>StackOverError</code></li>
+<li>等等</li>
+</ul>
+</li>
+<li><p><code>Exception</code>类</p>
+<ul>
+<li><code>RuntimeException</code><ul>
+<li><code>IndexOutOfBoundsException</code></li>
+<li><code>NullPointerException</code></li>
+<li>等等</li>
+</ul>
+</li>
+<li><code>非RuntimeException</code>(也叫<code>Checked Exception</code>异常)<ul>
+<li><code>IOException</code></li>
+<li><code>ReflectiveOperationException</code></li>
+<li><code>NumberFormatException</code></li>
+<li><code>FileNotFoundException</code></li>
+<li><code>SocketException</code></li>
+<li>等等</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><code>非RuntimeException</code>异常必须被捕获，<code>RuntimeExcept</code>异常不强制被捕获。</p>
+</li>
+<li><p>异常捕获使用<code>try&#123;&#125;···catch&#123;&#125;</code>语句。</p>
+</li>
+<li><p>其中<code>try</code>声明可能出现异常的方法，<code>catch</code>捕获异常Exception及其子类。</p>
+</li>
+<li><p><code>thorws</code>语句声明可能出现的异常，凡是用throws声明异常的方法，最终必须被捕获，如若不捕获，可在最高调用层<code>throws</code>异常，代价是发送异常的话程序会闪退。</p>
+</li>
+<li><p><code>printStackTrace()</code>方法可以打印异常栈。</p>
+<span id="more"></span>
+<h3 id="2-多catch语句与finally"><a href="#2-多catch语句与finally" class="headerlink" title="2.多catch语句与finally"></a>2.多catch语句与finally</h3></li>
+<li><p>catch语句可以捕获多个异常，如果这些异常有继承关系，则需要分开捕获，例如如下代码：</p>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        process1();</span><br><span class="line">        process2();</span><br><span class="line">        process3();</span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        System.out.println(e);</span><br><span class="line">    &#125; <span class="keyword">catch</span> (NumberFormatException e) &#123;</span><br><span class="line">        System.out.println(e);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>注意子类要放在父类异常前面，否则如果匹配到父类异常，子类异常将不会被捕获到。</li>
+<li>如果无继承关系，则多个异常可以用<code>|</code>同时合并。</li>
+<li><code>finally</code>语句可以保证无论是否发生异常都会被执行。</li>
+<li>可以存在<code>try&#123;&#125;···finally&#123;&#125;</code>语句，前提是方法已经用<code>throws</code>语句声明异常。</li>
+</ul>
+<h3 id="3-抛出异常"><a href="#3-抛出异常" class="headerlink" title="3.抛出异常"></a>3.抛出异常</h3><ul>
+<li>异常的传播：当某个方法抛出了异常时，如果当前方法没有捕获异常，异常就会被抛到上层调用方法，直到遇到某个<code>try&#123;&#125;···catch&#123;&#125;</code>语句被捕获为止。</li>
+<li>如何抛出异常:创建某个异常实例，用<code>throws</code>语句抛出。</li>
+<li>异常类型转换，如果在<code>try</code>语句中抛出异常，又在<code>catch</code>语句抛出新的异常，就会把异常类型转换。</li>
+<li>获取原始异常的办法：<ul>
+<li>把<code>try</code>捕获的原始异常的实例传入<code>catch</code>语句中抛出的新类型异常的参数中。</li>
+<li>使用<code>getCause()</code>方法。</li>
+</ul>
+</li>
+<li>如果在try或者catch语句中抛出异常，JVM会先执行finally语句，然后抛出异常。</li>
+<li>异常屏蔽(Suppressed Exception)：如果在finally语句抛出异常，则catch语句的异常不会被抛出，由于JVM只能抛出一个异常。</li>
+<li>打印输出被屏蔽的异常<code>SuppressedException</code>的方法：创建一个<code>Exception </code>实例，保存被屏蔽的异常的信息，判断存在SuppressedException后，用<code>addSuppressed()</code>方法把刚才创建的<code>Exception</code>实例添加进来，最后抛出异常。</li>
+</ul>
+<h3 id="4-自定义异常类型-amp-NullPointerException"><a href="#4-自定义异常类型-amp-NullPointerException" class="headerlink" title="4.自定义异常类型&amp;NullPointerException"></a>4.自定义异常类型&amp;NullPointerException</h3><ul>
+<li><p>在一个大型项目中，通常的做法是自定义一个<code>BaseException</code>，并且建议继承自<code>RuntimeException</code>，最后由<code>BaseEduixception</code>派生出其他自定义异常类型。</p>
+</li>
+<li><p>对于<code>NullPointerException</code>异常，应当遵循早暴露早修复的原则。</p>
+</li>
+<li><p>为了防止出现<code>NullPointerException</code>异常，应有较好的编码习惯，比如用<code>&quot; &quot;</code>空字符串代替<code>null</code>。</p>
+</li>
+</ul>
+<h3 id="5-断言"><a href="#5-断言" class="headerlink" title="5.断言"></a>5.断言</h3><ul>
+<li>断言(Assertion)是一种调试程序的方式。</li>
+<li>作用处:断言通常用在不在可恢复程序中，因为断言失败会导致程序结束提出。</li>
+<li>断言的用法: 例如<code>assert  x&gt;=0</code>,如果x&lt;0，则断言失败，返回<code>AssertionError</code>；可以在断言的时候附带错误信息，例如<code>assert x&gt;=0 : &quot;x must &gt; 0&quot;</code>。</li>
+<li>开启方式: 断言默认是关闭的，可以在命令行开启<code>java -enableassertions Main.java</code>。</li>
+</ul>
+<h3 id="6-JDK-Logging"><a href="#6-JDK-Logging" class="headerlink" title="6.JDK Logging"></a>6.JDK Logging</h3><ul>
+<li><p><code>JDK Logging</code>可用于有针对性地调试代码。</p>
+</li>
+<li><p><code>JDK Logging</code>的使用：</p>
+</li>
+<li><p>位于<code>java.util.logging</code>包中。</p>
+</li>
+<li><p>有八种日志级别，默认级别为INFO，并且默认级别以下的日志不会被打印，但可设定默认级别。</p>
+<ul>
+<li>SEVERE<ul>
+<li>WARNING</li>
+<li>INFO</li>
+<li>CONFIG</li>
+<li>FINE</li>
+<li>FINER</li>
+<li>FINEST</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>示例代码</p>
+</li>
+</ul>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> com.itranswarp.learnjava;</span><br><span class="line"><span class="keyword">import</span> java.util.logging.Logger;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Logger logger = Logger.getGlobal();</span><br><span class="line">        logger.info(<span class="string">&quot;start process...&quot;</span>);</span><br><span class="line">        logger.warning(<span class="string">&quot;memory is running out...&quot;</span>);</span><br><span class="line">        logger.fine(<span class="string">&quot;ignored.&quot;</span>);</span><br><span class="line">        logger.severe(<span class="string">&quot;process will be terminated...&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<pre><code>  ### 7.Commons Logging
+</code></pre>
+<ul>
+<li><code>Commons Logging</code>是一种第三方日志库，它由<code>Apache</code>创建，可作为日志接口来调用其他日志系统。</li>
+<li>特点：可以挂载不同的日志系统，默认情况下先搜索<code>Log4j</code>，如果没找到，再使用<code>JDK Logging</code>。</li>
+<li>使用<ul>
+<li>首先可通过静态工厂方法<code>LogFactory.getLog()</code>方法(方法内的参数可以为<code>getclass()</code>或<code>当前类名.class</code>,Main)创建一个<code>Log</code>实例，再使用<code>Log</code>的实例方法打印日志。</li>
+<li>如果在静态方法中引用<code>Log</code>示例，则需要定义静态<code>Log</code>实例，如果在实例方法中引用实例，则定义一个实例变量。</li>
+<li>示例代码</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.apache.commons.logging.Log;</span><br><span class="line"><span class="keyword">import</span> org.apache.commons.logging.LogFactory;</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        Log log = LogFactory.getLog(Main.class);</span><br><span class="line">        log.info(<span class="string">&quot;start...&quot;</span>);</span><br><span class="line">        log.warn(<span class="string">&quot;end.&quot;</span>);m</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li>六种日志级别，其中<code>INFO</code>为默认级别。<ul>
+<li>FATAL</li>
+<li>ERROR</li>
+<li>WARNING</li>
+<li>INFO</li>
+<li>DEBUG</li>
+<li>TRACE</li>
+</ul>
+</li>
+<li>注意：由于为第三方库，所以需要提前下载。</li>
+</ul>
+<h3 id="8-Log4j"><a href="#8-Log4j" class="headerlink" title="8.Log4j"></a>8.Log4j</h3><ul>
+<li><code>Log4j</code>是一种日志系统，就跟<code>JDK Logging</code>一样。</li>
+<li>Log4j的特点：可自动通过不同的Appender把同一条日志输出到不同的目的地。</li>
+<li>使用：可通过修改配置文件，最后通过<code>Common Logging</code>来实现调用。</li>
+</ul>
+<h3 id="9-SLF4J和Logback"><a href="#9-SLF4J和Logback" class="headerlink" title="9.SLF4J和Logback"></a>9.SLF4J和Logback</h3><ul>
+<li><code>SLF4J</code>相当于<code>Common Logging</code>。</li>
+<li><code>Logback</code>相当于<code>Log4j</code>。</li>
+<li>使用：<code>SLF4J</code>的接口实际上和<code>Commons Logging</code>几乎一模一样，不同之处就是<code>Log</code>变成了<code>Logger</code>，<code>LogFactory</code>变成了<code>LoggerFactory</code>。</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/06/15/studynotes/semver2.0.0/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2020/06/12/studynotes/java-exception/>http://example.com/2020/06/12/studynotes/java-exception/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T22:00:34+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 19, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java%E5%BC%82%E5%B8%B8/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java异常</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java%E6%97%A5%E5%BF%97/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java日志</p></a></div>
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2020/06/12/studynotes/java-exception/&title=Java异常 - Hexo&summary=
+本文是Java异常篇，学习于廖雪峰的Java教程
+
+Java异常1.异常类型
+异常体系的根为Throwable，它继承自Object。
+
+Throwable有两个体系Error和Exception。
+
+Error类
+
+OutOfMemoryError
+NoClassDefFounderError
+StackOverError
+等等
+
+
+Exception类
+
+RuntimeException
+IndexOutOfBoundsException
+NullPointerException
+等等
+
+
+非RuntimeException(也叫Checked Exception异常)
+IOException
+ReflectiveOperationException
+NumberFormatException
+FileNotFoundException
+SocketException
+等等
+
+
+
+
+非RuntimeException异常必须被捕获，RuntimeExcept异常不强制被捕获。
+
+异常捕获使用try&#123;&#125;···catch&#123;&#125;语句。
+
+其中try声明可能出现异常的方法，catch捕获异常Exception及其子类。
+
+thorws语句声明可能出现的异常，凡是用throws声明异常的方法，最终必须被捕获，如若不捕获，可在最高调用层throws异常，代价是发送异常的话程序会闪退。
+
+printStackTrace()方法可以打印异常栈。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2020/06/12/studynotes/java-exception/&title=Java异常 - Hexo&summary=
+本文是Java异常篇，学习于廖雪峰的Java教程
+
+Java异常1.异常类型
+异常体系的根为Throwable，它继承自Object。
+
+Throwable有两个体系Error和Exception。
+
+Error类
+
+OutOfMemoryError
+NoClassDefFounderError
+StackOverError
+等等
+
+
+Exception类
+
+RuntimeException
+IndexOutOfBoundsException
+NullPointerException
+等等
+
+
+非RuntimeException(也叫Checked Exception异常)
+IOException
+ReflectiveOperationException
+NumberFormatException
+FileNotFoundException
+SocketException
+等等
+
+
+
+
+非RuntimeException异常必须被捕获，RuntimeExcept异常不强制被捕获。
+
+异常捕获使用try&#123;&#125;···catch&#123;&#125;语句。
+
+其中try声明可能出现异常的方法，catch捕获异常Exception及其子类。
+
+thorws语句声明可能出现的异常，凡是用throws声明异常的方法，最终必须被捕获，如若不捕获，可在最高调用层throws异常，代价是发送异常的话程序会闪退。
+
+printStackTrace()方法可以打印异常栈。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2020/06/12/studynotes/java-exception/&title=Java异常 - Hexo&summary=
+本文是Java异常篇，学习于廖雪峰的Java教程
+
+Java异常1.异常类型
+异常体系的根为Throwable，它继承自Object。
+
+Throwable有两个体系Error和Exception。
+
+Error类
+
+OutOfMemoryError
+NoClassDefFounderError
+StackOverError
+等等
+
+
+Exception类
+
+RuntimeException
+IndexOutOfBoundsException
+NullPointerException
+等等
+
+
+非RuntimeException(也叫Checked Exception异常)
+IOException
+ReflectiveOperationException
+NumberFormatException
+FileNotFoundException
+SocketException
+等等
+
+
+
+
+非RuntimeException异常必须被捕获，RuntimeExcept异常不强制被捕获。
+
+异常捕获使用try&#123;&#125;···catch&#123;&#125;语句。
+
+其中try声明可能出现异常的方法，catch捕获异常Exception及其子类。
+
+thorws语句声明可能出现的异常，凡是用throws声明异常的方法，最终必须被捕获，如若不捕获，可在最高调用层throws异常，代价是发送异常的话程序会闪退。
+
+printStackTrace()方法可以打印异常栈。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2020/06/12/studynotes/Hexo-upgrade/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Hexo版本升级指南</p>
+          <p class='content'>Hexo版本升级指南1.更新升级hexo1npm install hexo-cli -g
+
+2.查看可更新npm依赖包并升级安装npm-check包1npm install npm-check ...</p>
+        </a>
+      
+      
+        <a class='next' href='/2020/06/12/Coursere/Learning%20how%20to%20learn%20part%202/'>
+          <p class='title'>Learning how to learn part2<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>Learning how to learn -part2一.组块1. 什么是组块组块是大脑中的一种神经信息片段。
+2. 组块化
+组块整体化可以让更多信息联系起来。
+
+3. 组块化的优点
+解决问题...</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -511,188 +938,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Coursera%E8%AF%BE%E7%A8%8B/" href="/categories/Coursera%E8%AF%BE%E7%A8%8B/"
-            id="categoriesCourseraE8AFBEE7A88B"
-            ><div class='name'>Coursera课程</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%B9%A6%E7%B1%8D/" href="/categories/%E4%B9%A6%E7%B1%8D/"
-            id="categoriesE4B9A6E7B18D"
-            ><div class='name'>书籍</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%80%9D%E8%80%83/" href="/categories/%E6%80%9D%E8%80%83/"
-            id="categoriesE6809DE88083"
-            ><div class='name'>思考</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/" href="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/"
-            id="categoriesE689A9E5B195E99885E8AFBB"
-            ><div class='name'>扩展阅读</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0"
-            ><div class='name'>技术笔记</div><div class='badge'>(14)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0Git"
-            ><div class='name'>Git</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0GitGitE585A5E997A8E5ADA6E4B9A0"
-            ><div class='name'>Git入门学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E8%BF%9B%E9%98%B6/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E8%BF%9B%E9%98%B6/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0GitGitE8BF9BE998B6"
-            ><div class='name'>Git进阶</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0Java"
-            ><div class='name'>Java</div><div class='badge'>(6)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E5%BC%82%E5%B8%B8"><span class="toc-text">Java异常</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%BC%82%E5%B8%B8%E7%B1%BB%E5%9E%8B"><span class="toc-text">1.异常类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%A4%9Acatch%E8%AF%AD%E5%8F%A5%E4%B8%8Efinally"><span class="toc-text">2.多catch语句与finally</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%8A%9B%E5%87%BA%E5%BC%82%E5%B8%B8"><span class="toc-text">3.抛出异常</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%BC%82%E5%B8%B8%E7%B1%BB%E5%9E%8B-amp-NullPointerException"><span class="toc-text">4.自定义异常类型&amp;NullPointerException</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%96%AD%E8%A8%80"><span class="toc-text">5.断言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-JDK-Logging"><span class="toc-text">6.JDK Logging</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-Log4j"><span class="toc-text">8.Log4j</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-SLF4J%E5%92%8CLogback"><span class="toc-text">9.SLF4J和Logback</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Coursera/" style="font-size: 20.67px; color: #6c6c6c">Coursera</a> <a href="/tags/Git/" style="font-size: 20.67px; color: #6c6c6c">Git</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/JDK/" style="font-size: 14px; color: #999">JDK</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/Java%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">Java反射</a> <a href="/tags/Java%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">Java基础</a> <a href="/tags/Java%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">Java异常</a> <a href="/tags/Java%E6%97%A5%E5%BF%97/" style="font-size: 14px; color: #999">Java日志</a> <a href="/tags/Java%E6%B3%A8%E8%A7%A3/" style="font-size: 14px; color: #999">Java注解</a> <a href="/tags/Markdown/" style="font-size: 14px; color: #999">Markdown</a> <a href="/tags/cnpm/" style="font-size: 14px; color: #999">cnpm</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/npm/" style="font-size: 17.33px; color: #828282">npm</a> <a href="/tags/yarn/" style="font-size: 14px; color: #999">yarn</a> <a href="/tags/%E4%B9%A6%E7%B1%8D/" style="font-size: 14px; color: #999">书籍</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 14px; color: #999">思考</a> <a href="/tags/%E6%A0%B8%E5%BF%83%E7%B1%BB/" style="font-size: 14px; color: #999">核心类</a> <a href="/tags/%E7%89%88%E6%9C%AC%E5%8F%B7/" style="font-size: 14px; color: #999">版本号</a> <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" style="font-size: 14px; color: #999">面向对象</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
 
   
 
 
 </aside>
+
 
 
 		  
@@ -701,8 +968,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Java异常";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

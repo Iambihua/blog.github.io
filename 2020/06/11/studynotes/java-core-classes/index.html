@@ -5,10 +5,6 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="index,follow">
-      
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -26,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hexo</title>
+  <title>Java核心类 - Hexo</title>
+  
+    <meta name="keywords" content="Java,核心类">
   
 
+  
+    <meta name="description" content="Java进阶学习之核心类">
   
 
   <!-- feed -->
@@ -357,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: ;">
+        <div id="half" class='cover-wrapper post dock' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -422,7 +422,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-          <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
         </div>
     
   
@@ -433,608 +433,612 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-  
-  <section class="post-list">
-    
-      
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/06/15/studynotes/semver2.0.0/">
-        语义化版本2.0.0介绍
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="语义化版本2-0-0介绍"><a href="#语义化版本2-0-0介绍" class="headerlink" title="语义化版本2.0.0介绍"></a>语义化版本2.0.0介绍</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>语义化版本是为了解决软件开发过程中依赖关系混乱或者依赖锁死的情况。</p>
-<p>它的标准格式如下：</p>
-<blockquote>
-<p><strong>x.y.z</strong></p>
-</blockquote>
-<p>其中x表示主版本号，y表示次版本号，z表示修订号。</p>
-<p>对这几种版本号的解释如下：</p>
-<p>X 主版本号，表示做了<strong>不向下兼容的修改</strong>时递增。</p>
-<p>Y 次版本号，表示做了<strong>向下兼容的新增及修改</strong>时递增。</p>
-<p>Z 修订号，表示做了<strong>向下兼容的问题修复</strong>时递增。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-06-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/">扩展阅读</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/06/15/studynotes/semver2.0.0/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   
 
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        Java核心类
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
 </div>
 
-          </div>
+          
         
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/08/04/studynotes/npm-command/">
-        npm常用命令
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="npm常见命令"><a href="#npm常见命令" class="headerlink" title="npm常见命令"></a>npm常见命令</h1><h2 id="一-npm-amp-yarn介绍"><a href="#一-npm-amp-yarn介绍" class="headerlink" title="一.npm&amp;yarn介绍"></a>一.npm&amp;yarn介绍</h2><p>npm是一个基于Node.js的包管理工具。<br>yarn是Facebook、Google、Exponent 和 Tilde 联合推出了一个新的 包管理工具,与npm相比有些优势。<br>npm在安装Node.js时会被一并安装，yarn则需要额外安装。</p>
-<h2 id="二-npm-amp-cnpm的关系"><a href="#二-npm-amp-cnpm的关系" class="headerlink" title="二.npm&amp;cnpm的关系"></a>二.npm&amp;cnpm的关系</h2><h3 id="1-介绍"><a href="#1-介绍" class="headerlink" title="1.介绍"></a>1.介绍</h3><p>由于npm服务器在国外，所以在国内安装速度不是很理想，于是淘宝团队开发了一个npmjs.org的镜像，可以有效解决下载过于缓慢的问题。这是淘宝团队对它的介绍。</p>
-<blockquote>
-<blockquote>
-<p>“这是一个完整 npmjs.org 镜像，你可以用此代替官方版本(只读)，同步频率目前为 10分钟 一次以保证尽量与官方服务同步。”</p>
-</blockquote>
-</blockquote>
-    
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/">Java</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-08-04</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/08/04/studynotes/npm-command/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：Jun 11, 2020</p>
+  </a>
 </div>
 
-          </div>
+          
         
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
       
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/15/studynotes/java-reflection/">
-        Java反射
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <blockquote>
-<p>本文是Java反射篇，学习于<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/wiki/1252599548343744">廖雪峰的Java教程</a></p>
-</blockquote>
-<h2 id="Java反射"><a href="#Java反射" class="headerlink" title="Java反射"></a>Java反射</h2><h3 id="1-Class类"><a href="#1-Class类" class="headerlink" title="1.Class类"></a>1.Class类</h3><ul>
-<li><p>反射：通过<code>Class</code>实例获取相关类信息的方法称为反射。</p>
-</li>
-<li><p><code>JVM</code>会在执行过程中动态加载类到内存，并为其创建一个<code>Class</code>类型的实例，并且该Class实例只能在JVM内部创建。</p>
-</li>
-<li><p>如何获取一个<code>Class</code>实例</p>
-<ul>
-<li>通过一个类的静态变量<code>class</code>获取，如<code>String.class</code>。</li>
-<li>通过实例变量调用<code>getClass()</code>方法。</li>
-<li>通过<code>Class</code>类的静态<code>Class.forName()</code>方法，例<code>Class.forName(String.lang.String)</code>,其中参数中的类名要为完整类名。</li>
-</ul>
-</li>
-<li><p><code>Class</code>实例的比较，可以用<code>==</code>比较，原因是<code>Class</code>实例在JVM中是唯一的。</p>
-</li>
-<li><p>准确判断两个类型是否为同一类型可用<code>==</code>比较。</p>
-</li>
-<li><p>数组例如<code>String[ ]</code>也可以创建<code>Class</code>实例，而且不同于<code>String.class</code>。</p>
-</li>
-<li><p>此外，<code>JVM</code>也为基本类型创建了<code>Class</code>实例,例如<code>int.class</code>。</p>
-</li>
-<li><p>可通过一个<code>Class</code>实例调用<code>newInstance()</code>方法创建一个对应类型的实例，但只能调用该类的无参数构造方法，例如:</p>
-    
+      <div id="lc-pv" data-title="Java核心类" data-path="/2020/06/11/studynotes/java-core-classes/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/">Java</a>
+
+
+          
         
       </div>
-      
-        <div>
-          <a class='readmore' href='/2020/06/15/studynotes/java-reflection/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/15/Coursere/Learning%20how%20to%20learn%20prat%201/">
-        Learning how to learn part1
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="Learning-how-to-learn-prat-1"><a href="#Learning-how-to-learn-prat-1" class="headerlink" title="Learning how to learn -prat 1"></a>Learning how to learn -prat 1</h1><h2 id="一-两种思考模式"><a href="#一-两种思考模式" class="headerlink" title="一.两种思考模式"></a>一.两种思考模式</h2><h3 id="1-专注模式"><a href="#1-专注模式" class="headerlink" title="1.专注模式"></a>1.专注模式</h3><ul>
-<li>当我们大脑在专心思考某个问题时大脑所处的模式，是比较紧密的思考模式。</li>
-</ul>
-<h3 id="2-发散模式"><a href="#2-发散模式" class="headerlink" title="2.发散模式"></a>2.发散模式</h3><ul>
-<li>当我们大脑在多广度思考时大脑所处的模式，是一种概括性的思考模式。</li>
-</ul>
-<h3 id="3-思考模式切换"><a href="#3-思考模式切换" class="headerlink" title="3.思考模式切换"></a>3.思考模式切换</h3><ul>
-<li><p>在大脑中的某一时刻，专注模式和发散模式只能同时存在一种模式。</p>
-</li>
-<li><p>学习时，最好的利用大脑思考模式的方法是两种模式相互切换。</p>
-</li>
-<li><p>有时候发散模式有助于梳理知识，增强对相关知识的理解性。</p>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-15</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Coursera%E8%AF%BE%E7%A8%8B/">Coursera课程</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/06/15/Coursere/Learning%20how%20to%20learn%20prat%201/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
   
   
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/14/studynotes/java-object-oriented/">
-        Java面向对象基础
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <blockquote>
+  <blockquote>
 <p>本文是Java的面向对象篇，学习于<a target="_blank" rel="noopener" href="https://www.liaoxuefeng.com/">廖雪峰的Java教程</a>.</p>
 </blockquote>
-<h2 id="面向对象基础"><a href="#面向对象基础" class="headerlink" title="面向对象基础"></a>面向对象基础</h2><h3 id="1-方法"><a href="#1-方法" class="headerlink" title="1.方法"></a>1.方法</h3><ul>
-<li><code>private</code>方法和<code>private</code>字段不能外部类访问。</li>
-<li><code>private</code>方法和<code>private</code>字段是用来方便自身类使用的，为了保证类的封装性。</li>
-<li><strong>this</strong> 变量指当前实例。</li>
-<li>局部变量的优先级高于字段，可变参数也是局部变量。</li>
-<li>可变参数的定义：<code>类型... 变量名</code>，相当于数组。</li>
+<h2 id="Java核心类"><a href="#Java核心类" class="headerlink" title="Java核心类"></a>Java核心类</h2><h3 id="1-String"><a href="#1-String" class="headerlink" title="1.String"></a>1.String</h3><ul>
+<li><p>String字符串内部是通过一个<code>char[]</code>表示的。</p>
+</li>
+<li><p>String字符串不可变性的实现：通过内部的<code>private final char[]</code>实现。</p>
+</li>
+<li><p>字符串的比较</p>
+<ul>
+<li>用<code>equals()</code>方法来比较，而不用<code>==</code>。</li>
+<li>Java编译器在编译期间，会把拥有相同字符串的对象视为同一个对象并且放入常量池，所以用<code>==</code>比较字符串得出的结果会有巧合性。</li>
+<li>忽略大小写比较字符串用<code>equalsIgnoreCase()</code>方法。</li>
 </ul>
-<h3 id="2-构造方法"><a href="#2-构造方法" class="headerlink" title="2.构造方法"></a>2.构造方法</h3><ul>
-<li>构造方法名与类名相同，构造方法无返回值，必须用<code>new</code>操作符调用。</li>
-<li>未自定义构造方法时，系统会默认创建一个无参数构造方法。</li>
-<li>如果已经自定义构造方法，系统将不再默认创建构造方法。</li>
-<li>引用类型的字段默认是<code>null</code>，数值类型的字段是默认值，<code>int</code>类型默认值是<code>0</code>，布尔类型默认值是<code>false</code>。</li>
-<li>字段的最终赋值结果由构造方法中的赋值语句决定。</li>
-<li>一个类中可以有多构造方法，只是参数列表不同。</li>
+</li>
+<li><p>判断是否包含子串用<code>contains()</code>方法，参数为<code>CharSequence</code>类，为String的子类。</p>
+</li>
+<li><p>搜索字串</p>
+<ul>
+<li><code>indexOf()</code>方法返回字串第一次出现在前半部分的索引。</li>
+<li><code>lastIndexOf()</code>方法返回子串第一次出现在后半部分的索引。</li>
 </ul>
-<h3 id="3-重载方法"><a href="#3-重载方法" class="headerlink" title="3.重载方法"></a>3.重载方法</h3><ul>
-<li><p>方法名相同但参数列表不同的方法叫(overload)重载方法，返回类型<strong>通常</strong>是相同的。</p>
 </li>
-<li><p>重载方法的目的是实现相似的功能但得出不同的结果。</p>
+<li><p>判断是否以子串开头或结尾</p>
+<ul>
+<li><code>startsWith()</code>判断是否以子串开头。</li>
+<li><code>endsWith()</code>判断是否以字串结尾。</li>
+</ul>
 </li>
-<li><p>方法签名: 方法名和参数列表。</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/">Java</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/06/14/studynotes/java-object-oriented/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/14/Coursere/Learning%20how%20to%20learn%20part%204/">
-        Learning how to learn part4
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="Learning-how-to-learn-part4"><a href="#Learning-how-to-learn-part4" class="headerlink" title="Learning how to learn part4"></a>Learning how to learn part4</h1><h2 id="一-学习技巧类"><a href="#一-学习技巧类" class="headerlink" title="一.学习技巧类"></a>一.学习技巧类</h2><h3 id="1-比喻和类比"><a href="#1-比喻和类比" class="headerlink" title="1.比喻和类比"></a>1.比喻和类比</h3><ul>
-<li>更好地理解当前概念</li>
-<li>摆脱思维定势
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-14</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Coursera%E8%AF%BE%E7%A8%8B/">Coursera课程</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/06/14/Coursere/Learning%20how%20to%20learn%20part%204/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/13/Coursere/Learning%20how%20to%20learn%20part%203/">
-        Learning how to learn part3
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="Learning-how-to-learn-part-3"><a href="#Learning-how-to-learn-part-3" class="headerlink" title="Learning how to learn part 3"></a>Learning how to learn part 3</h1><h2 id="一-拖延症"><a href="#一-拖延症" class="headerlink" title="一.拖延症"></a>一.拖延症</h2><h3 id="1-如何应对拖延症"><a href="#1-如何应对拖延症" class="headerlink" title="1.如何应对拖延症"></a>1.如何应对拖延症</h3><ul>
-<li><p>专注于学习过程而不是学习结果</p>
+<li><p>提取字串</p>
+<ul>
+<li><code>substring(2)</code>从索引为2处开始提取字串。</li>
+<li><code>substring(2,4)</code>从索引为2处开始提取，到索引为4处结束，但不包括索引为4的值。</li>
+</ul>
 </li>
-<li><p>排除干扰，防止出现拖延行为</p>
+<li><p>去除首尾空白字符</p>
+<ul>
+<li><code>trim()</code>方法，空白字符包括<code>\t</code>、<code>\r</code>、<code>\n</code>。</li>
+<li><code>strip()</code>方法，与<code>trim</code>方法的区别就是可以去除中文空格字符<code>\u3000</code>。</li>
+</ul>
 </li>
-<li><p>制定任务计划</p>
-    
-  </div>
+<li><p>判断是否为空</p>
+<ul>
+<li><code>isBlank()</code>方法可以判断是否包含空白字符。</li>
+<li><code>isEmpty</code>方法可以判断是否字符串的长度是否为0，<em>空白字符也可作为一个字符串长度。</em></li>
+</ul>
+</li>
+<li><p>替换子串用<code>replace(s1,s2)</code>方法，其中第一个参数s1表示被替换的子串，第二个参数s2为替换的子串。</p>
+</li>
+<li><p><code>spilt()</code>方法可以分割字符串。</p>
+</li>
+<li><p>格式化字符串</p>
+<ul>
+<li><code>formatted()</code></li>
+<li><code>format()</code>静态方法</li>
+<li>示例代码<span id="more"></span>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Main</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        String s = <span class="string">&quot;Hi %s, your score is %d!&quot;</span>;</span><br><span class="line">        System.out.println(s.formatted(<span class="string">&quot;Alice&quot;</span>, <span class="number">80</span>));</span><br><span class="line">        System.out.println(String.format(<span class="string">&quot;Hi %s, your score is %.2f!&quot;</span>, <span class="string">&quot;Bob&quot;</span>, <span class="number">59.5</span>));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li><p>类型转换</p>
+<ul>
+<li>基本数据类型或引用类型转String类型。<ul>
+<li>使用<code>String.valueOf()</code>静态方法。</li>
+<li>使用<code>toString()</code>静态方法。</li>
+</ul>
+</li>
+<li>String类型转其他类型：<ul>
+<li>转int:<code>Integer.parseInt()</code>或<code>Integer.valueOf()</code>方法。</li>
+<li>转bolean:<code>Bolean.parseBolean()</code>或<code>Boolean.valueOf()</code>方法。</li>
+<li>···</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>char[ ]和String的相互转换</p>
+<ul>
+<li>String转char[ ]：<code>char[] arr = s.toCharArray()</code>即<code>toCharArray()</code>方法。</li>
+<li>char[ ]转String：<code>String s =new String (arr)</code></li>
+</ul>
+</li>
+</ul>
+<h3 id="2-StringBuilder"><a href="#2-StringBuilder" class="headerlink" title="2.StringBuilder"></a>2.StringBuilder</h3><ul>
+<li>在循环中使用 <code>+</code> 拼接字符串会生成许多临时对象，这些会造成内存浪费，同时会影响GC效率，<code>StringBuilder</code>可以有效解决这个问题。</li>
+<li><code>StringBuilder</code>是一种可变类，可以预分配缓冲区。</li>
+<li><code>StringBuilder</code>使用<code>append()</code>方法拼接子串。</li>
+<li><code>StringBuilder</code>使用<code>delete()</code>方法删除子串。</li>
+<li><code>StringBuffer</code>是<code>StringBuilder</code>的线程安全版本，实现了相同的接口。</li>
+<li>可以通过同步来保证线程操作，但同步会带来执行速度的下降。</li>
+</ul>
+<h3 id="3-StringJoiner"><a href="#3-StringJoiner" class="headerlink" title="3.StringJoiner"></a>3.StringJoiner</h3><ul>
+<li><code>Stringjoiner</code>类最常用于用分隔符拼接数组，使用<code>add()</code>方法拼接。</li>
+<li>用法：<code>var sj = new StringJoiner(&quot;s1&quot;)</code>，其中参数s1为分隔符。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String[] names = &#123;<span class="string">&quot;Bob&quot;</span>, <span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Grace&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">var</span> sj = <span class="keyword">new</span> StringJoiner(<span class="string">&quot;, &quot;</span>);</span><br><span class="line"><span class="keyword">for</span> (String name : names) &#123;</span><br><span class="line">    sj.add(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<ul>
+<li><p>如果要指定开头和结尾，<code>var sj = new StringJoiner(&quot;s1&quot;,&quot;s2&quot;,&quot;s3&quot;)</code>，其中参数s1为分隔符，s2为开头，s3为结尾。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">String[] names = &#123;<span class="string">&quot;Bob&quot;</span>, <span class="string">&quot;Alice&quot;</span>, <span class="string">&quot;Grace&quot;</span>&#125;;</span><br><span class="line"><span class="keyword">var</span> sj = <span class="keyword">new</span> StringJoiner(<span class="string">&quot;, &quot;</span>, <span class="string">&quot;Hello &quot;</span>, <span class="string">&quot;!&quot;</span>);</span><br><span class="line"><span class="keyword">for</span> (String name : names) &#123;</span><br><span class="line">    sj.add(name);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p><code>String.join()</code>为String类的静态方法，内部使用了<code>StringJonier</code>类的方法来拼接子串。</p>
+</li>
+<li><p><code>String.join()</code>方法的使用:<code>s.join(&quot;s&quot;,arr)</code>，其中s为要拼接的子串，arr为字符串数组。</p>
+</li>
+</ul>
+<h3 id="4-包装类型"><a href="#4-包装类型" class="headerlink" title="4.包装类型"></a>4.包装类型</h3><ul>
+<li>基本数据类型变为引用类型，其实是使引用类型包含一个基本类型的字段。</li>
+<li>包装类：与某种基本类型对应的引用类型称为包装类(Wrapper Class)。</li>
+<li>需要注意两种引用类型<code>Integer</code>和<code>Character</code>，其他基本与基本类型的名称一致。</li>
+<li>推荐使用包装类型的静态方法<code>valueOf()</code>创建实例，而不通过构造方法创建，因为会有编译警告。</li>
+<li>自动装箱(Auto Boxing):将基本类型自动转换为引用类型。</li>
+<li>自动拆箱(Auto Unboxing):将引用类型自动转换为基本类型。</li>
+<li>自动装箱和自动拆箱只发生在编译阶段，优点是少写代码，缺点是影响执行效率。</li>
+<li>静态工厂方法：能创建新实例的静态方法，它有缓存优化机制。</li>
+<li>如果静态工厂方法<code>valueOf()</code>中的参数很小，会返回相同的实例，由于缓存优化。</li>
+<li>包装类型转化为基本类型<ul>
+<li>使用形如<code>intvalue()</code>的方法、</li>
+<li>使用形如<code>parseInt()</code>的方法。</li>
+</ul>
+</li>
+<li>包装类型的静态变量</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Boolean t = Boolean.TRUE;</span><br><span class="line">Boolean f = Boolean.FALSE;</span><br><span class="line"><span class="comment">// int可表示的最大/最小值:</span></span><br><span class="line"><span class="keyword">int</span> max = Integer.MAX_VALUE; <span class="comment">// 2147483647</span></span><br><span class="line"><span class="keyword">int</span> min = Integer.MIN_VALUE; <span class="comment">// -2147483648</span></span><br><span class="line"><span class="comment">// long类型占用的bit和byte数量:</span></span><br><span class="line"><span class="keyword">int</span> sizeOfLong = Long.SIZE; <span class="comment">// 64 (bits)</span></span><br><span class="line"><span class="keyword">int</span> bytesOfLong = Long.BYTES; <span class="comment">// 8 (bytes)</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="5-JavaBean"><a href="#5-JavaBean" class="headerlink" title="5.JavaBean"></a>5.JavaBean</h3><ul>
+<li><code>JavaBean</code>主要用来传递数据，即把一组数据组合成一个JavaBean便于传输。</li>
+<li>一组对应的读写方法称为属性。</li>
+<li>只有读方法的称为只读属性，只有写方法的称为只写属性。</li>
+</ul>
+<h3 id="6-Enum"><a href="#6-Enum" class="headerlink" title="6.Enum"></a>6.Enum</h3><ul>
+<li>用<code>enum</code>关键字定义的类称为枚举类，它被编译器编译为<code>final class Xxx extends Enum &#123; … &#125;</code>；</li>
+<li>注意：<ul>
+<li>枚举常量带有类型信息。</li>
+<li>不能用非枚举类型的值给枚举常量赋值。</li>
+<li>不同类型的枚举不能相互比较。</li>
+</ul>
+</li>
+<li>枚举的比较<ul>
+<li><code>== </code>运算符，枚举类是一种特殊的class，可以用<code>==</code>运算符比较，因为每一个枚举常量在JVM内都是一个唯一的实例。</li>
+<li><code>equals()</code>方法，可编译通过，但更推荐用<code>==</code>运算符，可以写更少的代码。</li>
+</ul>
+</li>
+<li>枚举类的特点<ul>
+<li>继承自<code>java.lang.Enum</code>，且枚举类无法被继承，因为枚举类被<code>fintal</code>关键字修饰。</li>
+<li>只能定义enum的实例，不能用new操作符创建实例。</li>
+<li>可以用于<code>switch</code>语句。</li>
+<li>每一个枚举常量在内部都是一个唯一的实例。</li>
+</ul>
+</li>
+<li><code>name()</code>返回枚举常量名。</li>
+<li><code>ordinal()</code>返回枚举常量按顺序定义的序号，以0开始计数。</li>
+<li>enum的构造方法应该声明为<code>private类型</code>。</li>
+<li>给枚举常量添加字段，字段强烈建议声明为<code>final</code>类型，并且在<code>pirvate</code>构造方法中初始化。</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">enum</span> <span class="title">Weekday</span> </span>&#123;</span><br><span class="line">    MON(<span class="number">1</span>, <span class="string">&quot;星期一&quot;</span>), TUE(<span class="number">2</span>, <span class="string">&quot;星期二&quot;</span>), WED(<span class="number">3</span>, <span class="string">&quot;星期三&quot;</span>), THU(<span class="number">4</span>, <span class="string">&quot;星期四&quot;</span>), FRI(<span class="number">5</span>, <span class="string">&quot;星期五&quot;</span>), SAT(<span class="number">6</span>, <span class="string">&quot;星期六&quot;</span>), SUN(<span class="number">0</span>, <span class="string">&quot;星期日&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">final</span> <span class="keyword">int</span> dayValue;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> String chinese;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">private</span> <span class="title">Weekday</span><span class="params">(<span class="keyword">int</span> dayValue, String chinese)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.dayValue = dayValue;</span><br><span class="line">        <span class="keyword">this</span>.chinese = chinese;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="7-Record"><a href="#7-Record" class="headerlink" title="7.Record"></a>7.Record</h3><ul>
+<li>不变类的两个特点<ul>
+<li><code>class</code>用<code>final</code>关键字修饰。</li>
+<li>字段也用<code>final</code>关键字修饰。</li>
+</ul>
+</li>
+<li>用关键字<code>record</code>声明的类称为记录类。</li>
+<li>跟枚举类一样，它不直接继承自<code>Record</code>类，而由编译器实现继承，并且被编译器编译为<code>public final class Xxx extends Record &#123;···&#125;</code></li>
+<li>记录类的声明方式</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> record <span class="title">Xxx</span><span class="params">(type x,type y)</span></span>;</span><br></pre></td></tr></table></figure>
+
+<p>它被编译器编译后的代码为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">final</span> <span class="class"><span class="keyword">class</span> <span class="title">Point</span> <span class="keyword">extends</span> <span class="title">Record</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> type x;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">final</span> type y;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="title">Point</span><span class="params">(type x, type y)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.x = x;</span><br><span class="line">        <span class="keyword">this</span>.y = y;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> type <span class="title">x</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.x;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> type <span class="title">y</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">this</span>.y;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">toString</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> String.format(<span class="string">&quot;Point[x=%s, y=%s]&quot;</span>, x, y);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">equals</span><span class="params">(Object o)</span> </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">hashCode</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        ...</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>可以在记录类的构造方法中编写逻辑检查语法。</li>
+<li>可以在记录类中用<code>of()</code>静态方法创建实例。</li>
+</ul>
+<h3 id="8-BigInteger"><a href="#8-BigInteger" class="headerlink" title="8.BigInteger"></a>8.BigInteger</h3><ul>
+<li>由CPU原生提供的long整型最大位数是64位，可直接通过CPU进行计算。</li>
+<li><code>java.math.BigInteger</code>表示任意大小的整数，内部以<code>int[ ]</code>数组表示。</li>
+<li>使用BigInteger做运算的时候，要用实例方法。</li>
+<li><code>BigInteger</code>转<code>long</code>时，如果超出<code>long</code>范围，用<code>longValneExact()</code>方法会报出<code>ArithmeticException</code>异常，用<code>longValne()</code>方法不会报出异常，但会丢失高位信息，即得出的结果不准确。</li>
+<li><code>BigInteger</code>类型也可转基本类型，因为<code>BigInteger</code>也继承自<code>Number</code>类。</li>
+</ul>
+<h3 id="9-BigDecimal"><a href="#9-BigDecimal" class="headerlink" title="9.BigDecimal"></a>9.BigDecimal</h3><ul>
+<li><code>BigDecimal</code>表示任意精度的浮点数。</li>
+<li>使用<code>scale()</code>方法可以返回小数位数，如果返回负数，表示这是整数，并且末尾有整数0。</li>
+<li>使用<code>stripTrailingZeros()</code>方法可以返回一个相等的，去除了末尾0的<code>BigDecimal</code>数。</li>
+<li>使用<code>setScale()</code>方法可以设置精度，如果设置精度小与原始精度，就要考虑四舍五入或者直接截断。</li>
+<li><code>RoundingMode.HALF_UP</code>常量表示四舍五入。</li>
+<li><code>RoundingMode.Down</code>常量表示直接截断。</li>
+<li>比较两个<code>BigDecimal</code>使用<code>compareTo()</code>方法。</li>
+<li><code>BigDecimal</code>实际上是由<code>BigInteger</code>和<code>sacle</code>表示的。</li>
+</ul>
+<h3 id="10-Math"><a href="#10-Math" class="headerlink" title="10.Math"></a>10.Math</h3><ul>
+<li>数学公式<ul>
+<li><code>Math.abs()</code>计算绝对值。</li>
+<li><code>Math.max()</code>计算最大值，<code>min()</code>计算最小值</li>
+<li><code>Math.pow(x,y)</code>计算$x^y$次方。</li>
+<li><code>Math.sqrt(x)</code>计算$\sqrt{x}$。</li>
+<li><code>Math.exp(x)</code>计算$e^x$。</li>
+<li><code>Math.log(x)</code>计算$\log_ex$。</li>
+<li><code>Math.log10(x)</code>计算$\ln x$。</li>
+<li><code>Math.sin(x)</code>计算$\sin x$。</li>
+<li><code>Math.cos(x)</code>计算$\cos x$。</li>
+<li><code>Math.tan(x)</code>计算$\tan x$。</li>
+<li><code>Math.asin(x)</code>计算$asin x$。</li>
+<li><code>Math.acos(x)</code>计算$acos x$。</li>
+<li><code>Math.PI</code>数学常量，表示$\Pi$</li>
+<li><code>Math.E</code>数学常量，表示e。</li>
+</ul>
+</li>
+<li><code>Math.random()</code>返回<code>[0,1</code>之间的随机数。</li>
+</ul>
+<h3 id="11-Random"><a href="#11-Random" class="headerlink" title="11.Random"></a>11.Random</h3><ul>
+<li><code>Random</code>类用来创建伪随机数，伪随机数是指给定一个种子，会产生相同的随机数序列。</li>
+<li><code>Math.random()</code>实际上内部调用了<code>Random</code>类。</li>
+<li><code>SecureRandom</code>类用来产生安全的随机数。</li>
+</ul>
+
   
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/Coursera%E8%AF%BE%E7%A8%8B/">Coursera课程</a>
-        
-      </div>
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2020/06/13/Coursere/Learning%20how%20to%20learn%20part%203/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2020/06/11/studynotes/java-core-classes/>http://example.com/2020/06/11/studynotes/java-core-classes/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T22:00:10+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 19, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
+          
   
-  
-  
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Java/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Java</p></a></div> <div class="new-meta-item meta-tags"><a class="tag" href="/tags/%E6%A0%B8%E5%BF%83%E7%B1%BB/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>核心类</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
-    <h2 class="article-title" >
-      <a href="/2020/06/13/studynotes/java-introduction/">
-        Java入门
-      </a>
-    </h2>
-  
-  <div class='md'>
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2020/06/11/studynotes/java-core-classes/&title=Java核心类 - Hexo&summary=
+本文是Java的面向对象篇，学习于廖雪峰的Java教程.
+
+Java核心类1.String
+String字符串内部是通过一个char[]表示的。
+
+String字符串不可变性的实现：通过内部的private final char[]实现。
+
+字符串的比较
+
+用equals()方法来比较，而不用==。
+Java编译器在编译期间，会把拥有相同字符串的对象视为同一个对象并且放入常量池，所以用==比较字符串得出的结果会有巧合性。
+忽略大小写比较字符串用equalsIgnoreCase()方法。
+
+
+判断是否包含子串用contains()方法，参数为CharSequence类，为String的子类。
+
+搜索字串
+
+indexOf()方法返回字串第一次出现在前半部分的索引。
+lastIndexOf()方法返回子串第一次出现在后半部分的索引。
+
+
+判断是否以子串开头或结尾
+
+startsWith()判断是否以子串开头。
+endsWith()判断是否以字串结尾。
+
+
+提取字串
+
+substring(2)从索引为2处开始提取字串。
+substring(2,4)从索引为2处开始提取，到索引为4处结束，但不包括索引为4的值。
+
+
+去除首尾空白字符
+
+trim()方法，空白字符包括\t、\r、\n。
+strip()方法，与trim方法的区别就是可以去除中文空格字符\u3000。
+
+
+判断是否为空
+
+isBlank()方法可以判断是否包含空白字符。
+isEmpty方法可以判断是否字符串的长度是否为0，空白字符也可作为一个字符串长度。
+
+
+替换子串用replace(s1,s2)方法，其中第一个参数s1表示被替换的子串，第二个参数s2为替换的子串。
+
+spilt()方法可以分割字符串。
+
+格式化字符串
+
+formatted()
+format()静态方法
+示例代码"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
     
-      <p>Java进阶学习之入门篇~</p>
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2020/06/11/studynotes/java-core-classes/&title=Java核心类 - Hexo&summary=
+本文是Java的面向对象篇，学习于廖雪峰的Java教程.
+
+Java核心类1.String
+String字符串内部是通过一个char[]表示的。
+
+String字符串不可变性的实现：通过内部的private final char[]实现。
+
+字符串的比较
+
+用equals()方法来比较，而不用==。
+Java编译器在编译期间，会把拥有相同字符串的对象视为同一个对象并且放入常量池，所以用==比较字符串得出的结果会有巧合性。
+忽略大小写比较字符串用equalsIgnoreCase()方法。
+
+
+判断是否包含子串用contains()方法，参数为CharSequence类，为String的子类。
+
+搜索字串
+
+indexOf()方法返回字串第一次出现在前半部分的索引。
+lastIndexOf()方法返回子串第一次出现在后半部分的索引。
+
+
+判断是否以子串开头或结尾
+
+startsWith()判断是否以子串开头。
+endsWith()判断是否以字串结尾。
+
+
+提取字串
+
+substring(2)从索引为2处开始提取字串。
+substring(2,4)从索引为2处开始提取，到索引为4处结束，但不包括索引为4的值。
+
+
+去除首尾空白字符
+
+trim()方法，空白字符包括\t、\r、\n。
+strip()方法，与trim方法的区别就是可以去除中文空格字符\u3000。
+
+
+判断是否为空
+
+isBlank()方法可以判断是否包含空白字符。
+isEmpty方法可以判断是否字符串的长度是否为0，空白字符也可作为一个字符串长度。
+
+
+替换子串用replace(s1,s2)方法，其中第一个参数s1表示被替换的子串，第二个参数s2为替换的子串。
+
+spilt()方法可以分割字符串。
+
+格式化字符串
+
+formatted()
+format()静态方法
+示例代码"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2020/06/11/studynotes/java-core-classes/&title=Java核心类 - Hexo&summary=
+本文是Java的面向对象篇，学习于廖雪峰的Java教程.
+
+Java核心类1.String
+String字符串内部是通过一个char[]表示的。
+
+String字符串不可变性的实现：通过内部的private final char[]实现。
+
+字符串的比较
+
+用equals()方法来比较，而不用==。
+Java编译器在编译期间，会把拥有相同字符串的对象视为同一个对象并且放入常量池，所以用==比较字符串得出的结果会有巧合性。
+忽略大小写比较字符串用equalsIgnoreCase()方法。
+
+
+判断是否包含子串用contains()方法，参数为CharSequence类，为String的子类。
+
+搜索字串
+
+indexOf()方法返回字串第一次出现在前半部分的索引。
+lastIndexOf()方法返回子串第一次出现在后半部分的索引。
+
+
+判断是否以子串开头或结尾
+
+startsWith()判断是否以子串开头。
+endsWith()判断是否以字串结尾。
+
+
+提取字串
+
+substring(2)从索引为2处开始提取字串。
+substring(2,4)从索引为2处开始提取，到索引为4处结束，但不包括索引为4的值。
+
+
+去除首尾空白字符
+
+trim()方法，空白字符包括\t、\r、\n。
+strip()方法，与trim方法的区别就是可以去除中文空格字符\u3000。
+
+
+判断是否为空
+
+isBlank()方法可以判断是否包含空白字符。
+isEmpty方法可以判断是否字符串的长度是否为0，空白字符也可作为一个字符串长度。
+
+
+替换子串用replace(s1,s2)方法，其中第一个参数s1表示被替换的子串，第二个参数s2为替换的子串。
+
+spilt()方法可以分割字符串。
+
+格式化字符串
+
+formatted()
+format()静态方法
+示例代码"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+</div>
+
+
+
         
-        <time>2020-06-13</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a><span class="sep"></span><a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/">Java</a>
-        
-      </div>
       
-        <div>
-          <a class='readmore' href='/2020/06/13/studynotes/java-introduction/'>
-            Read More
-          </a>
-        </div>
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2020/06/12/Coursere/Learning%20how%20to%20learn%20part%202/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Learning how to learn part2</p>
+          <p class='content'>Learning how to learn -part2一.组块1. 什么是组块组块是大脑中的一种神经信息片段。
+2. 组块化
+组块整体化可以让更多信息联系起来。
+
+3. 组块化的优点
+解决问题...</p>
+        </a>
+      
+      
+        <a class='next' href='/2020/06/10/studynotes/java-annotation/'>
+          <p class='title'>Java注解<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+本文是Java注解篇，学习于廖雪峰的Java教程
+
+Java注解1.注解
+注解(Annotation)是一种特殊的注释,作用于Java源码的类，方法，字段，参数前。
+
+注解与代码的关系：从JV...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/12/Thinking/how-to-study/">
-        关于知识学习和公众号的思考
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <p>如何更有效率学习</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%80%9D%E8%80%83/">思考</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/06/12/Thinking/how-to-study/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
+  </article>
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2020/06/12/studynotes/Hexo-upgrade/">
-        Hexo版本升级指南
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="Hexo版本升级指南"><a href="#Hexo版本升级指南" class="headerlink" title="Hexo版本升级指南"></a>Hexo版本升级指南</h1><h3 id="1-更新升级hexo"><a href="#1-更新升级hexo" class="headerlink" title="1.更新升级hexo"></a>1.更新升级hexo</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
 
-<h3 id="2-查看可更新npm依赖包并升级"><a href="#2-查看可更新npm依赖包并升级" class="headerlink" title="2.查看可更新npm依赖包并升级"></a>2.查看可更新npm依赖包并升级</h3><h4 id="安装npm-check包"><a href="#安装npm-check包" class="headerlink" title="安装npm-check包"></a>安装npm-check包</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install npm-check -g</span><br></pre></td></tr></table></figure>
-<h4 id="检查可更新依赖包并升级"><a href="#检查可更新依赖包并升级" class="headerlink" title="检查可更新依赖包并升级"></a>检查可更新依赖包并升级</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-check -u</span><br></pre></td></tr></table></figure>
 
-<p><strong>or</strong></p>
-<h4 id="安装npm-upgrade包"><a href="#安装npm-upgrade包" class="headerlink" title="安装npm-upgrade包"></a>安装npm-upgrade包</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g npm-upgrade</span><br></pre></td></tr></table></figure>
-<h4 id="检查可更新依赖包件并升级"><a href="#检查可更新依赖包件并升级" class="headerlink" title="检查可更新依赖包件并升级"></a>检查可更新依赖包件并升级</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm-upgrade</span><br></pre></td></tr></table></figure>
-
-<h3 id="4-更新"><a href="#4-更新" class="headerlink" title="4.更新"></a>4.更新</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update -g</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm update --save</span><br></pre></td></tr></table></figure>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2020-06-12</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2020/06/12/studynotes/Hexo-upgrade/'>
-            Read More
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 3
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow">
-              &nbsp;Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
-  
 
 
 </div>
@@ -1044,183 +1048,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Coursera%E8%AF%BE%E7%A8%8B/" href="/categories/Coursera%E8%AF%BE%E7%A8%8B/"
-            id="categoriesCourseraE8AFBEE7A88B"
-            ><div class='name'>Coursera课程</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%B9%A6%E7%B1%8D/" href="/categories/%E4%B9%A6%E7%B1%8D/"
-            id="categoriesE4B9A6E7B18D"
-            ><div class='name'>书籍</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%80%9D%E8%80%83/" href="/categories/%E6%80%9D%E8%80%83/"
-            id="categoriesE6809DE88083"
-            ><div class='name'>思考</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/" href="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/"
-            id="categoriesE689A9E5B195E99885E8AFBB"
-            ><div class='name'>扩展阅读</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0"
-            ><div class='name'>技术笔记</div><div class='badge'>(14)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0Git"
-            ><div class='name'>Git</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0GitGitE585A5E997A8E5ADA6E4B9A0"
-            ><div class='name'>Git入门学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E8%BF%9B%E9%98%B6/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E8%BF%9B%E9%98%B6/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0GitGitE8BF9BE998B6"
-            ><div class='name'>Git进阶</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0Java"
-            ><div class='name'>Java</div><div class='badge'>(6)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E6%A0%B8%E5%BF%83%E7%B1%BB"><span class="toc-text">Java核心类</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-String"><span class="toc-text">1.String</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-StringBuilder"><span class="toc-text">2.StringBuilder</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-StringJoiner"><span class="toc-text">3.StringJoiner</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%8C%85%E8%A3%85%E7%B1%BB%E5%9E%8B"><span class="toc-text">4.包装类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-JavaBean"><span class="toc-text">5.JavaBean</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-Enum"><span class="toc-text">6.Enum</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-Record"><span class="toc-text">7.Record</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-BigInteger"><span class="toc-text">8.BigInteger</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-BigDecimal"><span class="toc-text">9.BigDecimal</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-Math"><span class="toc-text">10.Math</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-Random"><span class="toc-text">11.Random</span></a></li></ol></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Coursera/" style="font-size: 20.67px; color: #6c6c6c">Coursera</a> <a href="/tags/Git/" style="font-size: 20.67px; color: #6c6c6c">Git</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/JDK/" style="font-size: 14px; color: #999">JDK</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/Java%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">Java反射</a> <a href="/tags/Java%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">Java基础</a> <a href="/tags/Java%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">Java异常</a> <a href="/tags/Java%E6%97%A5%E5%BF%97/" style="font-size: 14px; color: #999">Java日志</a> <a href="/tags/Java%E6%B3%A8%E8%A7%A3/" style="font-size: 14px; color: #999">Java注解</a> <a href="/tags/Markdown/" style="font-size: 14px; color: #999">Markdown</a> <a href="/tags/cnpm/" style="font-size: 14px; color: #999">cnpm</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/npm/" style="font-size: 17.33px; color: #828282">npm</a> <a href="/tags/yarn/" style="font-size: 14px; color: #999">yarn</a> <a href="/tags/%E4%B9%A6%E7%B1%8D/" style="font-size: 14px; color: #999">书籍</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 14px; color: #999">思考</a> <a href="/tags/%E6%A0%B8%E5%BF%83%E7%B1%BB/" style="font-size: 14px; color: #999">核心类</a> <a href="/tags/%E7%89%88%E6%9C%AC%E5%8F%B7/" style="font-size: 14px; color: #999">版本号</a> <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" style="font-size: 14px; color: #999">面向对象</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
 
   
 
@@ -1235,8 +1078,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Java核心类";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
@@ -1248,7 +1091,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="full";
+    cover_wrapper.id="half";
     cover_wrapper.style.display="";
     
   

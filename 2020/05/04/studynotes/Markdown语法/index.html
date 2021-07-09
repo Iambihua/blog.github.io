@@ -5,8 +5,6 @@
   <!-- SEO相关 -->
   
     
-      <meta name="robots" content="noindex,follow">
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -24,9 +22,13 @@
 
   <!-- 页面元数据 -->
   
-  <title>Archive: 2021 - Hexo</title>
+  <title>Markdown - Hexo</title>
+  
+    <meta name="keywords" content="Markdown">
   
 
+  
+    <meta name="description" content="Markdown语法介绍">
   
 
   <!-- feed -->
@@ -355,7 +357,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="half" class='cover-wrapper  dock' style="display: ;">
+        <div id="half" class='cover-wrapper post dock' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -431,79 +433,346 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-	
-		
-  <section class="post-list">
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
     
-      
+    
+    
+      <h1 class="title">
+        Markdown
+      </h1>
+      <div class='new-meta-box'>
         
           
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
         
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/06/15/studynotes/semver2.0.0/">
-        语义化版本2.0.0介绍
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      <h1 id="语义化版本2-0-0介绍"><a href="#语义化版本2-0-0介绍" class="headerlink" title="语义化版本2.0.0介绍"></a>语义化版本2.0.0介绍</h1><h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><p>语义化版本是为了解决软件开发过程中依赖关系混乱或者依赖锁死的情况。</p>
-<p>它的标准格式如下：</p>
-<blockquote>
-<p><strong>x.y.z</strong></p>
-</blockquote>
-<p>其中x表示主版本号，y表示次版本号，z表示修订号。</p>
-<p>对这几种版本号的解释如下：</p>
-<p>X 主版本号，表示做了<strong>不向下兼容的修改</strong>时递增。</p>
-<p>Y 次版本号，表示做了<strong>向下兼容的新增及修改</strong>时递增。</p>
-<p>Z 修订号，表示做了<strong>向下兼容的问题修复</strong>时递增。</p>
-    
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-06-15</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：May 4, 2020</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/">扩展阅读</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="Markdown" data-path="/2020/05/04/studynotes/Markdown%E8%AF%AD%E6%B3%95/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="Markdown介绍"><a href="#Markdown介绍" class="headerlink" title="Markdown介绍"></a>Markdown介绍</h1><p>什么是Markdown?它是一种轻量级的文本标记语言，使用它可以更方便地编辑文档。</p>
+<p>很多网站都利用它来撰写文档或用于在论坛发消息等等。</p>
+<p>说到这大家可能就像在听天书一样，因为搞不懂专业用语。  </p>
+<p> 事实上这并不是什么计算机编程语言，而是通用的普通人都可以学的标记语言，贱简单呐。</p>
+<p>在讲解常见的Markdown语法之前，我先向大家介绍一下富文本编辑器。</p>
+<p>富文本编辑器其实很常见的，比如Word，WPS的编辑页面就是一种富文本文本编辑器。</p>
+<p>那么它与支持Markdown语法的编辑器有何不同？</p>
+<p>最大的区别在于：富文本编辑器对文本内容的编辑，大多是通过键盘快捷键或者点击编辑按钮比如加粗，斜体，标题设置等来编辑的。</p>
+<p>Markdown编辑器就不一样了，在这里举个例子，如果要设置一级标题，应该怎么处理呢？</p>
+<p>很简单 ，在开头打一个#号就可以了，比如 # 这是一级标题(注意#号留有一个空格)，那么二级标题呢？so easy，在开头打两个#号就可以了。</p>
+<p>是不是很简单？所以学习Markdown语法，并不需要太费脑费劲，只需要记住大部分常用的语法格式即可。</p>
+<span id="more"></span>
+<p>下面是我总结的使用Markdown语法编写文章的好处：</p>
+<blockquote>
+<ul>
+<li>沉浸式写作，完全不会太分心，不用再点击鼠标或者敲键盘编辑文章了。  </li>
+<li>方便快捷，只需掌握常用语法，即可应付常见格式要求。</li>
+<li>支持多类型文章的导入导出，比如Markdown 编写的文档可以导出 HTML 、Word、图像、PDF、Epub 等多种格式的文档。</li>
+</ul>
+</blockquote>
+<p>平时写文章或者论文什么的，可以用markdown语法.让你全神贯注一心一意扑在写文章大业上，何乐而不为？</p>
+<p>如果你问我有什么好的Markdown编辑器，那我绝对强烈推荐你用Tlianjie ypora。</p>
+<p>为什么呢，你可以点击这篇文章详细了解。接下来不多说，开始迎接主角。</p>
+<h1 id="常用markdown语法"><a href="#常用markdown语法" class="headerlink" title="常用markdown语法"></a>常用markdown语法</h1><h3 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h3><blockquote>
+<p>使用 # 可标记标题，其中#号的个数表示标题级别，最高级别是一级标题，最多支持6级标题。</p>
+</blockquote>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618220309.gif" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618220309.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"></p>
+<h3 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h3><blockquote>
+<ol>
+<li><p>斜体文字可用 *   * 表示。</p>
+</li>
+<li><p> 粗体文字可用 **   **表示。</p>
+</li>
+<li><p>粗斜体文字可用 ***   ***   表示</p>
+<p>其中*号也可用  _代替。</p>
+</li>
+</ol>
+</blockquote>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618221239.gif" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618221239.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"></p>
+<h3 id="3-分割线"><a href="#3-分割线" class="headerlink" title="3.分割线"></a>3.分割线</h3><blockquote>
+<p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线。  </p>
+</blockquote>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618222113.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618222113.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618222113712"></p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618222130.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618222130.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618222130364"></p>
+<h3 id="4-删除线"><a href="#4-删除线" class="headerlink" title="4.删除线"></a>4.删除线</h3><blockquote>
+<p>文字的两端加上两个波浪线 <strong>~~</strong> ,可为文字添加删除线。</p>
+</blockquote>
+<h3 id="5-下划线"><a href="#5-下划线" class="headerlink" title="5.下划线"></a>5.下划线</h3><blockquote>
+<p>文字的左端添加 <u>  ,右端添加 </u> ,可为文字添加下划线</p>
+</blockquote>
+<h3 id="6-脚注"><a href="#6-脚注" class="headerlink" title="6.脚注"></a>6.脚注</h3><blockquote>
+<p>脚注是对文本的补充说明,它的格式为[^ ]</p>
+</blockquote>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618223524.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618223524.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618223524031"></p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618223604.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618223604.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618223604320"></p>
+<h3 id="7-无序列表"><a href="#7-无序列表" class="headerlink" title="7.无序列表"></a>7.无序列表</h3><blockquote>
+<p>无序列表使用星号(*)、加号(+)或是减号(-)作为列表标记，这些标记后面要添加一个空格，然后再填写内容。</p>
+</blockquote>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618224001.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618224001.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618224000932"></p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618224016.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618224016.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618224016288"></p>
+<h3 id="8-有序列表"><a href="#8-有序列表" class="headerlink" title="8.有序列表"></a>8.有序列表</h3><blockquote>
+<p>有序列表使用数字并加上 . 号来表示.</p>
+</blockquote>
+<h3 id="9-链接"><a href="#9-链接" class="headerlink" title="9.链接"></a>9.链接</h3><blockquote>
+<p>Markdown表示链接有两种方式：</p>
+<ol>
+<li>[链接名称] (链接地址)</li>
+<li>&lt;链接地址&gt;</li>
+</ol>
+</blockquote>
+<p>例如：</p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618225431.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618225431.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618225431027"></p>
+<p>结果：</p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618225516.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618225516.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618225516215"></p>
+<h3 id="10-图片"><a href="#10-图片" class="headerlink" title="10.图片"></a>10.图片</h3><blockquote>
+<ul>
+<li>开头一个感叹号</li>
+<li>接着一个方括号，里面写明对图片的描述。</li>
+<li>最后一个普通括号，里面是图片的链接。</li>
+</ul>
+</blockquote>
+<p>实例：</p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618230312.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618230312.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618230312484"></p>
+<p>结果：</p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200618230343.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200618230343.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200618230343812"></p>
+<h3 id="11-表格"><a href="#11-表格" class="headerlink" title="11.表格"></a>11.表格</h3><blockquote>
+<ul>
+<li>Markdown使用 | 来分隔单元格，使用 - - - 来分隔表头和其他行。</li>
+<li>-：设置内容和标题居右对齐。</li>
+<li>:-  设置内容和标题居左对齐。</li>
+<li>:-: 设置内容和标题居中对齐。</li>
+</ul>
+</blockquote>
+<p>实例：</p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200619071549.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200619071549.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200619071549100"></p>
+<p>结果：</p>
+<p><img src="https://gitee.com/liubeep/blogimage/raw/master/img/20200619071637.png" class="lazyload" data-srcset="https://gitee.com/liubeep/blogimage/raw/master/img/20200619071637.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="image-20200619071637459"></p>
+<p>另外，数学公式也可以用Markdown语法编写，但是有些复杂复杂，而且我们平时也不会经常用到，所以就不介绍了。</p>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/06/15/studynotes/semver2.0.0/'>
-            Read More
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2020/05/04/studynotes/Markdown%E8%AF%AD%E6%B3%95/>http://example.com/2020/05/04/studynotes/Markdown%E8%AF%AD%E6%B3%95/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-06-19T22:01:13+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：Jun 19, 2021</p>
+  </a>
 </div>
 
-          </div>
         
       
-    
-  </section>
+        
+          
   
-    
-  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/Markdown/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>Markdown</p></a></div>
 
 
-	
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2020/05/04/studynotes/Markdown%E8%AF%AD%E6%B3%95/&title=Markdown - Hexo&summary=Markdown介绍什么是Markdown?它是一种轻量级的文本标记语言，使用它可以更方便地编辑文档。
+很多网站都利用它来撰写文档或用于在论坛发消息等等。
+说到这大家可能就像在听天书一样，因为搞不懂专业用语。  
+ 事实上这并不是什么计算机编程语言，而是通用的普通人都可以学的标记语言，贱简单呐。
+在讲解常见的Markdown语法之前，我先向大家介绍一下富文本编辑器。
+富文本编辑器其实很常见的，比如Word，WPS的编辑页面就是一种富文本文本编辑器。
+那么它与支持Markdown语法的编辑器有何不同？
+最大的区别在于：富文本编辑器对文本内容的编辑，大多是通过键盘快捷键或者点击编辑按钮比如加粗，斜体，标题设置等来编辑的。
+Markdown编辑器就不一样了，在这里举个例子，如果要设置一级标题，应该怎么处理呢？
+很简单 ，在开头打一个#号就可以了，比如 # 这是一级标题(注意#号留有一个空格)，那么二级标题呢？so easy，在开头打两个#号就可以了。
+是不是很简单？所以学习Markdown语法，并不需要太费脑费劲，只需要记住大部分常用的语法格式即可。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2020/05/04/studynotes/Markdown%E8%AF%AD%E6%B3%95/&title=Markdown - Hexo&summary=Markdown介绍什么是Markdown?它是一种轻量级的文本标记语言，使用它可以更方便地编辑文档。
+很多网站都利用它来撰写文档或用于在论坛发消息等等。
+说到这大家可能就像在听天书一样，因为搞不懂专业用语。  
+ 事实上这并不是什么计算机编程语言，而是通用的普通人都可以学的标记语言，贱简单呐。
+在讲解常见的Markdown语法之前，我先向大家介绍一下富文本编辑器。
+富文本编辑器其实很常见的，比如Word，WPS的编辑页面就是一种富文本文本编辑器。
+那么它与支持Markdown语法的编辑器有何不同？
+最大的区别在于：富文本编辑器对文本内容的编辑，大多是通过键盘快捷键或者点击编辑按钮比如加粗，斜体，标题设置等来编辑的。
+Markdown编辑器就不一样了，在这里举个例子，如果要设置一级标题，应该怎么处理呢？
+很简单 ，在开头打一个#号就可以了，比如 # 这是一级标题(注意#号留有一个空格)，那么二级标题呢？so easy，在开头打两个#号就可以了。
+是不是很简单？所以学习Markdown语法，并不需要太费脑费劲，只需要记住大部分常用的语法格式即可。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2020/05/04/studynotes/Markdown%E8%AF%AD%E6%B3%95/&title=Markdown - Hexo&summary=Markdown介绍什么是Markdown?它是一种轻量级的文本标记语言，使用它可以更方便地编辑文档。
+很多网站都利用它来撰写文档或用于在论坛发消息等等。
+说到这大家可能就像在听天书一样，因为搞不懂专业用语。  
+ 事实上这并不是什么计算机编程语言，而是通用的普通人都可以学的标记语言，贱简单呐。
+在讲解常见的Markdown语法之前，我先向大家介绍一下富文本编辑器。
+富文本编辑器其实很常见的，比如Word，WPS的编辑页面就是一种富文本文本编辑器。
+那么它与支持Markdown语法的编辑器有何不同？
+最大的区别在于：富文本编辑器对文本内容的编辑，大多是通过键盘快捷键或者点击编辑按钮比如加粗，斜体，标题设置等来编辑的。
+Markdown编辑器就不一样了，在这里举个例子，如果要设置一级标题，应该怎么处理呢？
+很简单 ，在开头打一个#号就可以了，比如 # 这是一级标题(注意#号留有一个空格)，那么二级标题呢？so easy，在开头打两个#号就可以了。
+是不是很简单？所以学习Markdown语法，并不需要太费脑费劲，只需要记住大部分常用的语法格式即可。"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2020/05/23/ReadingNotes/%E4%B9%A0%E6%83%AF%E7%9A%84%E5%8A%9B%E9%87%8F/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>《习惯的力量》</p>
+          <p class='content'>前些天读了查尔斯·都希格的《习惯的力量》一书，译者是吴奕俊,曹烨。
+我并没有读完这本书，相反只是阅读了个人的习惯这部分，其余两部分是成功的组织机构的习惯和社会的习惯。
+我觉得后两部分暂时用不到，...</p>
+        </a>
+      
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
 </div>
 <aside class='l_side'>
   
@@ -511,188 +780,28 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">Hexo</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop">
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/Coursera%E8%AF%BE%E7%A8%8B/" href="/categories/Coursera%E8%AF%BE%E7%A8%8B/"
-            id="categoriesCourseraE8AFBEE7A88B"
-            ><div class='name'>Coursera课程</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E4%B9%A6%E7%B1%8D/" href="/categories/%E4%B9%A6%E7%B1%8D/"
-            id="categoriesE4B9A6E7B18D"
-            ><div class='name'>书籍</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%80%9D%E8%80%83/" href="/categories/%E6%80%9D%E8%80%83/"
-            id="categoriesE6809DE88083"
-            ><div class='name'>思考</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/" href="/categories/%E6%89%A9%E5%B1%95%E9%98%85%E8%AF%BB/"
-            id="categoriesE689A9E5B195E99885E8AFBB"
-            ><div class='name'>扩展阅读</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0"
-            ><div class='name'>技术笔记</div><div class='badge'>(14)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0Git"
-            ><div class='name'>Git</div><div class='badge'>(4)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E5%85%A5%E9%97%A8%E5%AD%A6%E4%B9%A0/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0GitGitE585A5E997A8E5ADA6E4B9A0"
-            ><div class='name'>Git入门学习</div><div class='badge'>(1)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E8%BF%9B%E9%98%B6/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Git/Git%E8%BF%9B%E9%98%B6/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0GitGitE8BF9BE998B6"
-            ><div class='name'>Git进阶</div><div class='badge'>(3)</div></a></li>
-        
-          <li><a class="flat-box child"
-            title="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/Java/"
-            id="categoriesE68A80E69CAFE7AC94E8AEB0Java"
-            ><div class='name'>Java</div><div class='badge'>(6)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A0%87%E9%A2%98"><span class="toc-text">1.标题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AD%97%E4%BD%93"><span class="toc-text">2.字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%88%86%E5%89%B2%E7%BA%BF"><span class="toc-text">3.分割线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%88%A0%E9%99%A4%E7%BA%BF"><span class="toc-text">4.删除线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E4%B8%8B%E5%88%92%E7%BA%BF"><span class="toc-text">5.下划线</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E8%84%9A%E6%B3%A8"><span class="toc-text">6.脚注</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%97%A0%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-text">7.无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E6%9C%89%E5%BA%8F%E5%88%97%E8%A1%A8"><span class="toc-text">8.有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E9%93%BE%E6%8E%A5"><span class="toc-text">9.链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%9B%BE%E7%89%87"><span class="toc-text">10.图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-%E8%A1%A8%E6%A0%BC"><span class="toc-text">11.表格</span></a></li></ol>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/Coursera/" style="font-size: 20.67px; color: #6c6c6c">Coursera</a> <a href="/tags/Git/" style="font-size: 20.67px; color: #6c6c6c">Git</a> <a href="/tags/HTML/" style="font-size: 14px; color: #999">HTML</a> <a href="/tags/JDK/" style="font-size: 14px; color: #999">JDK</a> <a href="/tags/Java/" style="font-size: 24px; color: #555">Java</a> <a href="/tags/Java%E5%8F%8D%E5%B0%84/" style="font-size: 14px; color: #999">Java反射</a> <a href="/tags/Java%E5%9F%BA%E7%A1%80/" style="font-size: 14px; color: #999">Java基础</a> <a href="/tags/Java%E5%BC%82%E5%B8%B8/" style="font-size: 14px; color: #999">Java异常</a> <a href="/tags/Java%E6%97%A5%E5%BF%97/" style="font-size: 14px; color: #999">Java日志</a> <a href="/tags/Java%E6%B3%A8%E8%A7%A3/" style="font-size: 14px; color: #999">Java注解</a> <a href="/tags/Markdown/" style="font-size: 14px; color: #999">Markdown</a> <a href="/tags/cnpm/" style="font-size: 14px; color: #999">cnpm</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/npm/" style="font-size: 17.33px; color: #828282">npm</a> <a href="/tags/yarn/" style="font-size: 14px; color: #999">yarn</a> <a href="/tags/%E4%B9%A6%E7%B1%8D/" style="font-size: 14px; color: #999">书籍</a> <a href="/tags/%E6%80%9D%E8%80%83/" style="font-size: 14px; color: #999">思考</a> <a href="/tags/%E6%A0%B8%E5%BF%83%E7%B1%BB/" style="font-size: 14px; color: #999">核心类</a> <a href="/tags/%E7%89%88%E6%9C%AC%E5%8F%B7/" style="font-size: 14px; color: #999">版本号</a> <a href="/tags/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" style="font-size: 14px; color: #999">面向对象</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode shadow desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
 
   
 
 
 </aside>
+
 
 
 		  
@@ -701,8 +810,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="Markdown";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要
