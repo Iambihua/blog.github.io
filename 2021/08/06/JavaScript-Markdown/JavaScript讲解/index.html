@@ -5,10 +5,6 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="noindex,follow">
-      
-    
   
   <!-- 渲染优化 -->
   <meta http-equiv='x-dns-prefetch-control' content='on' />
@@ -26,7 +22,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>哔哗的技术博客</title>
+  <title>JavaScript讲解 - 哔哗的技术博客</title>
+  
+    <meta name="keywords" content="JavaScript">
   
 
   
@@ -295,7 +293,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -373,415 +371,276 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
+  <article class="article post white-box reveal md blur article-type-post" id="post" itemscope itemprop="blogPost">
   
-  <section class="post-list">
+
+
+  
+  <div class="article-meta" id="top">
     
     
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
-  
-  
-  
-  
     
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/">
-        JavaScript类型转换
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        类型转换
-alert 会自动将任何值都转换为字符串类型。
-
-算术运算符会自动将其他类型的值转换为数字。
-
-String(value) 用来显式地转换为字符串类型。
-
-Number(value) 用来显式地转换为 number 类型。
-
-null 变成数字 0，undefined 变成 NaN。
-
-0、空字符串、null、undefined 和 NaN）将变为 false。
-
-注意：包含 0 ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E4%BA%A4%E4%BA%92%E5%87%BD%E6%95%B0%20alert%20prompt%20confirm/">
-        交互函数 alert prompt confirm
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        交互：alert、prompt 和 confirm
-弹出的这个带有信息的小窗口被称为 模态窗。
-alert函数仅仅弹出带有信息的模态窗。
-prompt 函数接收两个参数，并且接受函数的返回。
-title显示给用户的文本。
-default可选的第二个参数，指定 input 框的初始值。
-confirm 函数显示一个带有 question 以及确定和取消两个按钮的模态窗口。点击确定返回 true...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E4%BA%A4%E4%BA%92%E5%87%BD%E6%95%B0%20alert%20prompt%20confirm/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/">
-        JavaScript数据类型
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        数据类型
-动态类型”（dynamically typed）的编程语言，意思是虽然编程语言中有不同的数据类型，但是你定义的变量并不会在定义后，被限制为某一数据类型。
-
-number 类型代表整数和浮点数。
-
-Infinity 代表数学概念中的 无穷大 ∞。
-
-NaN 代表一个计算错误。
-
-任何对 NaN 的进一步操作都会返回 NaN。
-
-BigInt 类型是最近被添加到 JavaScript ...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E5%8F%98%E9%87%8F/">
-        JavaScript变量
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        变量
-在 JavaScript 中创建一个变量，可以使用 let 关键字。
-
-为了更好的可读性，最好一行只声明一个变量。
-
-一个变量应该只被声明一次。
-
-变量名称必须仅包含字母，数字，符号 $ 和 _。首字符必须非数字。
-
-如果命名包括多个单词，通常采用驼峰式命名法（camelCase）。也就是，单词一个接一个，除了第一个单词，其他的每个单词都以大写字母开头：myVeryLongName。
-...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E5%8F%98%E9%87%8F/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/">
-        现代模式 use strict
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        现代模式，”use strict”
-现代 JavaScript 支持 “classes” 和 “modules” —— 高级语言结构，它们会自动启用 use strict。
-“use strict” 来明确地激活EAMA规范新增的语言特性。
-当它处于脚本文件的顶部时，则整个脚本文件都将以“现代”模式进行工作。
-&quot;use strict&quot; 可以被放在函数体的开头。这样则可以只...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/'>
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
-  
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/">
+      <h1 class="title">
         JavaScript讲解
-      </a>
-    </h2>
-  
-  <div class='md'>
-    
-      
-        什么是 JavaScript？ - 学习 Web 开发 | MDN
-JavaScript 是一种脚本，一门编程语言。
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' target="_blank" href="https://www.lbihua.cn/about/" rel="nofollow noopener">
+    <img no-lazy src="https://cdn.jsdelivr.net/gh/Iambihua/cdn/images/avatar.jpg">
+    <p>哔哗</p>
+  </a>
+</div>
 
-HTML是一种标记语言，用来结构化我们的网页内容。
-
-CSS 是一种样式规则语言，可将样式应用于 HTML 内容。
-
-应用程序接口（Application Programming Interfaces（API））。
-
-文档对象模型 API（DOM（Document Obje...
-      
-    
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
+    </a>
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
+
+
+          
         
-        <time>2021-08-06</time>
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2021年8月6日</p>
+  </a>
+</div>
+
+          
         
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="JavaScript讲解" data-path="/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
         
       </div>
+    
+  </div>
+
+
+  
+  
+  <h1 id="什么是-JavaScript？-学习-Web-开发-MDN"><a href="#什么是-JavaScript？-学习-Web-开发-MDN" class="headerlink" title="什么是 JavaScript？ - 学习 Web 开发 | MDN"></a><a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Learn/JavaScript/First_steps/What_is_JavaScript">什么是 JavaScript？ - 学习 Web 开发 | MDN</a></h1><ul>
+<li><p>JavaScript 是一种脚本，一门编程语言。</p>
+</li>
+<li><p>HTML是一种标记语言，用来结构化我们的网页内容。</p>
+</li>
+<li><p>CSS 是一种样式规则语言，可将样式应用于 HTML 内容。</p>
+</li>
+<li><p>应用程序接口（Application Programming Interfaces（API））。</p>
+</li>
+<li><p>文档对象模型 API（DOM（Document Object Model）API） 能通过创建、移除和修改 HTML，为页面动态应用新样式等手段来操作 HTML 和 CSS。</p>
+</li>
+<li><p>地理位置 API（Geolocation API） 获取地理信息。</p>
+</li>
+<li><p>画布（Canvas） 和 WebGL API 可以创建生动的 2D 和 3D 图像。</p>
+</li>
+<li><p>在 HTML 和 CSS 集合组装成一个网页后，浏览器的 JavaScript 引擎将执行 JavaScript 代码。</p>
+</li>
+<li><p>JavaScript 最普遍的用处是通过 DOM API（见上文）动态修改 HTML 和 CSS 。</p>
+</li>
+<li><p>浏览器通常会按从上往下的顺序执行JavaScript代码。</p>
+</li>
+<li><p>在引用JavaScript对象之前必须确保该对象已经存在。</p>
+</li>
+<li><p>在解释型语言中，代码自上而下运行，且实时返回运行结果；代码在由浏览器执行前，不需要将其转化为其他形式。</p>
+</li>
+<li><p>编译型语言需要先将代码转化（编译）成另一种形式才能运行。</p>
+</li>
+<li><p>JavaScript 是轻量级解释型语言。</p>
+</li>
+<li><p>在浏览一个网页时，它的客户端代码就会被下载，然后由浏览器来运行并展示。这就是客户端 JavaScript。</p>
+</li>
+<li><p>服务器端JavaScript在服务器上运行，接着运行结果才由浏览器下载并展示出来。</p>
+</li>
+<li><p>CSS 使用 <link> 元素链接外部样式表。</p>
+</li>
+<li><p>使用 <style> 元素向 HTML 嵌入内部样式表。</p>
+</li>
+<li><p> JavaScript 是严格区分大小写的。</p>
+</li>
+<li><p>async “异步”属性）不中断后续 HTML 内容的加载。</p>
+</li>
+<li><p>async 只能用于外部脚本。</p>
+</li>
+<li><p>把脚本元素放在文档体的底端（</body> 标签之前，与之相邻）以及使用DOMContentLoaded 方案的问题是：只有在所有 HTML DOM 加载完成后才开始脚本的加载/解析过程，对于有大量 JavaScript 代码的大型网站，可能会带来显著的性能损耗。</p>
+</li>
+<li><p>defer 属性，脚本将按照在页面中出现的顺序加载和运行。</p>
+</li>
+<li><p>如果脚本无需等待页面解析，且无依赖独立运行，那么应使用 async。</p>
+</li>
+<li><p>如果脚本需要等待页面解析，且依赖于其它脚本，调用这些脚本时应使用 defer，将关联的脚本按所需顺序置于 HTML 中。</p>
+</li>
+</ul>
+
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/'>
-            阅读全文
-          </a>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://example.com/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/>http://example.com/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-08-06T09:22:36+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2021年8月6日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal blur">
+          
   
-  
-  
-  
-    
-    <h2 class="article-title" >
-      <a href="/2021/08/06/JavaScript-Markdown/JavaScript%E7%AE%80%E4%BB%8B/">
-        JavaScript简介
-      </a>
-    </h2>
-  
-  <div class='md'>
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/JavaScript/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>JavaScript</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
     
       
-        JavaScript 简介
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://example.com/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/&title=JavaScript讲解 - 哔哗的技术博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://example.com/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/&title=JavaScript讲解 - 哔哗的技术博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://example.com/2021/08/06/JavaScript-Markdown/JavaScript%E8%AE%B2%E8%A7%A3/&title=JavaScript讲解 - 哔哗的技术博客&summary="
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/2021/08/06/JavaScript-Markdown/JavaScript%E4%B8%A5%E6%A0%BC%E6%A8%A1%E5%BC%8F/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>现代模式 use strict</p>
+          <p class='content'>现代模式，”use strict”
+现代 JavaScript 支持 “classes” 和 “modules” —— 高级语言结构，它们会自动启用 use strict。
+“use stric...</p>
+        </a>
+      
+      
+        <a class='next' href='/2021/08/06/JavaScript-Markdown/JavaScript%E7%AE%80%E4%BB%8B/'>
+          <p class='title'>JavaScript简介<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>JavaScript 简介
 JavaScript脚本被以纯文本的形式提供和执行，它们不需要特殊的准备或编译即可运行。
 
-V8 —— Chrome 和 Opera 中的 JavaScript 引擎。
-
-SpiderMonkey —— Firefox 中的 JavaScript 引擎。
-
-TypeScript 专注于添加“严格的数据类型”以简化开发，以更好地支持复杂系统的开发。由微软开发。
-
-F...
-      
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time>2021-08-06</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/JavaScript/">JavaScript</a>
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2021/08/06/JavaScript-Markdown/JavaScript%E7%AE%80%E4%BB%8B/'>
-            阅读全文
-          </a>
-        </div>
+V8 —— Chrome 和 Opera 中的 JavaScript 引擎...</p>
+        </a>
       
     </div>
   
+</article>
 
+
+  
+
+  <article class="post white-box reveal blur" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
 
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-          <a class="prev" rel="prev" href="/page/2/">
-            <section class="post prev white-box blur" >
-              <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
-            </section>
-          </a>
-        
-        <p class="current">
-          3 / 3
-        </p>
-        
-      </div>
-    
-  
+  </article>
+
+
+
+
 
 
 </div>
@@ -791,143 +650,22 @@ F...
     
     
 
-<section class="widget blogger blur desktop mobile">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">哔哗的技术博客</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fas fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fas fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fas fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category blur desktop">
+  <section class="widget toc-wrapper blur desktop mobile" id="toc-div" >
     
   <header>
     
-      <a href='/blog/categories/'><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
         
-          <li><a class="flat-box"
-            title="/categories/JavaScript/" href="/categories/JavaScript/"
-            id="categoriesJavaScript"
-            ><div class='name'>JavaScript</div><div class='badge'>(27)</div></a></li>
-        
-      </ul>
     </div>
   </section>
 
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud blur desktop mobile">
-    
-  <header>
-    
-      <a href='/blog/tags/'><i class="fas fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/JS%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/" style="font-size: 14px; color: #999">JS数据类型</a> <a href="/tags/JavaScript/" style="font-size: 24px; color: #555">JavaScript</a> <a href="/tags/Mocha/" style="font-size: 14px; color: #999">Mocha</a> <a href="/tags/Symbol/" style="font-size: 14px; color: #999">Symbol</a> <a href="/tags/new%E6%93%8D%E4%BD%9C%E7%AC%A6/" style="font-size: 14px; color: #999">new操作符</a> <a href="/tags/this%E5%85%B3%E9%94%AE%E5%AD%97/" style="font-size: 14px; color: #999">this关键字</a> <a href="/tags/use-strict/" style="font-size: 14px; color: #999">use strict</a> <a href="/tags/%E5%8F%AF%E9%80%89%E9%93%BE/" style="font-size: 14px; color: #999">可选链?.</a> <a href="/tags/%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6/" style="font-size: 14px; color: #999">垃圾回收</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 14px; color: #999">字符串</a> <a href="/tags/%E5%AF%B9%E8%B1%A1/" style="font-size: 14px; color: #999">对象</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 14px; color: #999">数组</a> <a href="/tags/%E6%9E%84%E9%80%A0%E5%99%A8/" style="font-size: 14px; color: #999">构造器</a> <a href="/tags/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/" style="font-size: 14px; color: #999">箭头函数</a> <a href="/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/" style="font-size: 14px; color: #999">自动化测试</a>
-    </div>
-  </section>
-
-
-  
-
-  
-    
-    
-
-<section class="widget qrcode blur desktop mobile">
-  
-
-  <div class='content article-entry'>
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-      <img src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/qrcode/github@volantis.png'
-      
-        height='64px'
-      />
-    
-  </div>
-</section>
 
   
 
@@ -942,8 +680,8 @@ F...
 
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="JavaScript讲解";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   // header 这里无论是否开启pjax都需要

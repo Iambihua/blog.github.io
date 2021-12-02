@@ -5,9 +5,7 @@
   <!-- SEO相关 -->
   
     
-      
-        <meta name="robots" content="noindex,follow">
-      
+      <meta name="robots" content="noindex,follow">
     
   
   <!-- 渲染优化 -->
@@ -26,7 +24,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>哔哗的技术博客</title>
+  <title>归档：2021/8 - 哔哗的技术博客</title>
   
 
   
@@ -106,7 +104,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <body>
     
 
-<header id="l_header" class="l_header auto blur shadow show" style='opacity: 0' >
+<header id="l_header" class="l_header auto blur shadow " style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -295,7 +293,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <div id="l_cover">
   
     
-        <div id="full" class='cover-wrapper  dock' style="display: none;">
+        <div id="half" class='cover-wrapper  dock' style="display: ;">
           
             <div class='cover-bg lazyload placeholder' data-bg="https://uploadbeta.com/api/pictures/random/?key=BingEverydayWallpaperPicture"></div>
           
@@ -373,7 +371,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 
 <div class='l_main'>
-  
+	
+		
   <section class="post-list">
     
     
@@ -769,7 +768,7 @@ F...
       <br>
       <div class="prev-next">
         
-          <a class="prev" rel="prev" href="/page/2/">
+          <a class="prev" rel="prev" href="/archives/2021/08/page/2/">
             <section class="post prev white-box blur" >
               <i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页&nbsp;
             </section>
@@ -784,6 +783,7 @@ F...
   
 
 
+	
 </div>
 <aside class='l_side'>
   
@@ -935,7 +935,6 @@ F...
 </aside>
 
 
-
 		  
 		  <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
@@ -949,14 +948,14 @@ F...
   // header 这里无论是否开启pjax都需要
   var l_header=document.getElementById("l_header");
   
-  l_header.classList.add("show");
+  l_header.classList.remove("show");
   
   
     // cover
     var cover_wrapper=document.querySelector('.cover-wrapper');
     
-    cover_wrapper.id="none";
-    cover_wrapper.style.display="none";
+    cover_wrapper.id="half";
+    cover_wrapper.style.display="";
     
   
 </script>
